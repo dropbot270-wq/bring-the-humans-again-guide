@@ -31,6 +31,14 @@ it types.
 The rest of this guide explains each step, and the mistakes that most often get a
 first entry rejected.
 
+## Your first hour
+
+If you have sixty minutes, spend them like this: ten minutes signing up and
+linking GitHub and your wallet, fifteen reading two or three bounty pages and
+their rules, ten downloading one kit and reading its `RULES.txt`, twenty letting
+your agent draft the entry, and five running the pre-submit checks. An hour
+spent this way usually ends with a real submission, not just reading about one.
+
 ## Contents
 
 - [How a bounty works](#how-a-bounty-works)
@@ -121,7 +129,19 @@ For a first entry, prefer a bounty that is:
   counts.
 
 Read the rules file in the kit before you build — some bounties need extra
-software or an account somewhere else, and the page says so up front.
+software or an account somewhere else, and the page says so up front. Also check
+the payout curve: a bounty that pays fifty places rewards a solid entry far
+more often than a winner-takes-all bounty of the same size, so a wide payout is
+a friendlier first target.
+
+### What the checks look for
+
+Before any entry is scored, automatic checks confirm that the repository is
+public, created after the bounty opened, owned by the GitHub account linked to
+your make.fun account, and carrying an open-source license — and that the
+transcripts show your own agent writing the code, across more than one pass.
+Nothing here is judged by taste: each check passes or fails, and a failed check
+names its fix, so you can repair it and submit again.
 
 ## 3. Get the kit
 
@@ -210,7 +230,9 @@ node cli/makefun.mjs status
 
 It shows **submitted**, **checked**, **scored**, or **rejected** — and a rejected
 entry lists every failed check together with its fix. Fix them and submit again
-before the deadline.
+before the deadline. Remember that your latest submission before the deadline is
+the one that counts, and that a refused submission still uses one of your daily
+attempts, so run `check` locally before every submit.
 
 ## 6. Results and claiming your reward
 
